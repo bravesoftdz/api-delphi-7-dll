@@ -115,7 +115,7 @@ AutoIncBuild=0
 MajorVer=1
 MinorVer=0
 Release=0
-Build=0
+Build=1
 Debug=0
 PreRelease=0
 Special=0
@@ -126,13 +126,13 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=MeuCrediario
 FileDescription=
-FileVersion=1.0.0.0
+FileVersion=1.0.0.1
 InternalName=
 LegalCopyright=MeuCrediario
 LegalTrademarks=MeuCrediario
 OriginalFilename=
 ProductName=DLL para conexao na API
-ProductVersion=1.0.0.0
+ProductVersion=1.0.0.1
 Comments=DLL que auxilia na conexao com a API do MeuCrediario
 [HistoryLists\hlUnitAliases]
 Count=1

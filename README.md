@@ -17,3 +17,22 @@ invoke('TOKEN_ACESSO',
        '<params><cpf>12312312387</cpf></params>');
 ```
 
+## Exemplo da Consulta de cliente em java.
+```
+public class App {
+    
+   public interface simpleDLL extends Library {
+        simpleDLL INSTANCE = (simpleDLL) Native.loadLibrary("C:\\path\\meucrediario.dll", simpleDLL.class);
+        String invoke(String token, String url, String method, String params);
+    }
+   
+    public static void main(String[] args) {
+        simpleDLL dll = simpleDLL.INSTANCE;
+        
+        System.out.println(dll.invoke("TOKEN_ACESSO",
+                "https://api.meucrediario.com.br/v1/cliente", 
+                "GET", 
+                "<params><cpf>12312312387</cpf></params>"));
+    }
+}
+```
